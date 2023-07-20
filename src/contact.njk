@@ -1,0 +1,24 @@
+---
+title: "Eleventy Portfolio"
+layout: "base.njk"
+---
+
+<h2 class="heading--main text-center">Want to get in touch?</h2>
+<p class="contact__subheading text-center">I'm always open to new opportunities and projects.</p>
+
+<form action="/success" name="contact" class="form" method="POST" data-netlify="true">
+    <div class="form__section">
+        <label for="yourName" class="form__label">Name</label>
+        <input class="form__input" name="name" type="text" id="yourName" required="true">
+    </div>
+    <div class="form__section">
+        <label class="form__label" for="yourEmail" >Email</label>
+        <input class="form__input" name="email" type="email" id="yourEmail" required="true">
+    </div>
+    <div class="form__section">
+        <label class="form__label" for="message" >Message</label>
+        <textarea class="form__input" name="message" rows="4" id="message" required="true"></textarea>
+    </div>
+        <button class="form__button" type="submit">Let's talk</button>
+</form>
+
